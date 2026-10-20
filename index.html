@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player Pro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#121212">
+</head>
+<body>
+
+  <div class="player-card">
+    <div class="album-art">
+      <span class="music-icon">🎵</span>
+    </div>
+
+    <h2 id="song-title">Selecione uma música</h2>
+    <p id="artist-name">Player de Áudio PWA</p>
+
+    <!-- Elemento de Áudio Oculto -->
+    <audio id="audio-player"></audio>
+
+    <!-- Seletor de Arquivo de Música -->
+    <label for="file-input" class="btn-file">
+      📂 Escolher Música do Celular
+    </label>
+    <input type="file" id="file-input" accept="audio/*">
+
+    <!-- Barra de Progresso -->
+    <div class="progress-container" id="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Controles do Player -->
+    <div class="controls">
+      <button class="control-btn" id="btn-play">▶️ Play</button>
+    </div>
+
+    <!-- Botão de Instalar App -->
+    <button class="btn-install" id="btnInstalar">📲 Instalar App de Música</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
